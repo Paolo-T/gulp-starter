@@ -1,7 +1,7 @@
 
 # ES6
 
-## Array Methods
+### Array Methods
 <br>
 
 **forEach**

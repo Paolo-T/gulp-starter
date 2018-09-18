@@ -21,21 +21,21 @@ array1.forEach(function(element) {
 ```
 <br>
 
-#### Classes
+### Classes
 
 
 
 
-## Arrow Functions
+### Arrow Functions
 
 **Lexical 'this' keyword**
 
-## Let / Const
+### Let / Const
 
-## Destructuring
+### Destructuring
 
 
-#### Promises
+### Promises
 
 ```
  let someVariableName = new Promise((resolve, reject) => {
@@ -46,5 +46,5 @@ array1.forEach(function(element) {
 ```
 
 
-#### Async / Await
+### Async / Await
 

@@ -14,7 +14,10 @@
 
 #### Destructuring
 
-#### Arrays
+#### Array Methods
+<br>
+
+**forEach**
 
 ```
 var array1 = ['a', 'b', 'c'];
@@ -31,6 +34,7 @@ array1.forEach(function(element) {
 ```
 
 #### Promises
+
 ```
  let someVariableName = new Promise((resolve, reject) => {
         

@@ -1,20 +1,7 @@
 
 # ES6
 
-#### Classes
-
-
-
-
-#### Arrow Functions
-
-**Lexical 'this' keyword**
-
-#### Let / Const
-
-#### Destructuring
-
-#### Array Methods
+## Array Methods
 <br>
 
 **forEach**
@@ -32,6 +19,21 @@ array1.forEach(function(element) {
 
 
 ```
+<br>
+
+#### Classes
+
+
+
+
+## Arrow Functions
+
+**Lexical 'this' keyword**
+
+## Let / Const
+
+## Destructuring
+
 
 #### Promises
 

@@ -8,7 +8,9 @@
 
 ----------------------------------------------------------------
 
-**Array.prototype.forEach()** <br>
+**Array.prototype.forEach()** 
+<br>
+<br>
 The forEach() method executes a provided function once for each array element.<br>
 **RETURNS: undefined**
 
@@ -28,7 +30,9 @@ array1.forEach(function(element) {
 <br>
 <br>
 
-**Array.prototype.map()**<br>
+**Array.prototype.map()**
+<br>
+<br>
 The map() method creates a new array with the results of calling a provided function on every element in the calling array.<br>
 **We MUST use the 'return' on the iterator function!!!**
 
@@ -48,7 +52,9 @@ console.log(map1);
 <br>
 <br>
 
-**Array.prototype.filter()**<br>
+**Array.prototype.filter()**
+<br>
+<br>
 The filter() method creates a new array with all elements that pass the test implemented by the provided function.<br>
 **We MUST use the 'return' on the iterator function!!!**
 <br>

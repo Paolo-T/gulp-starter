@@ -28,7 +28,6 @@ The map() method creates a new array with the results of calling a provided func
 **We MUST use the 'return' on the iterator function!!!**
 
 
-
 ```
 var array1 = [1, 4, 9, 16];
 
@@ -45,7 +44,9 @@ console.log(map1);
 <br>
 
 **Array.prototype.filter()**<br>
-The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+The filter() method creates a new array with all elements that pass the test implemented by the provided function.<br>
+**We MUST use the 'return' on the iterator function!!!**
+<br>
 
 ```
 var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
@@ -54,8 +55,6 @@ const result = words.filter(word => word.length > 6);
 
 console.log(result);
 // expected output: Array ["exuberant", "destruction", "present"]
-
-
 
 ```
 

@@ -20,6 +20,13 @@ array1.forEach(function(element) {
 
 ```
 <br>
+<br>
+
+**map**
+
+
+
+
 
 ### Classes
 

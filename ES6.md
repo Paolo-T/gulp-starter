@@ -1,8 +1,11 @@
 
+
+
 # ES6
+----------------------------------------------------------------
 
 ### • Array Methods
-----------------------------------------------------------------
+
 **Array.prototype.forEach()** <br>
 The forEach() method executes a provided function once for each array element.<br>
 **RETURNS: undefined**

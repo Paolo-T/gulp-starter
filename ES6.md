@@ -67,6 +67,7 @@ console.log(result);
 
 **Array.prototype.find()**
 <br>
+<br>
 The find() method returns the value of **only the first** element in the array that satisfies the provided testing function. Otherwise undefined is returned.
 
 ```

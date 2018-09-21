@@ -26,17 +26,56 @@
 
 
 
-let accounts = [
-  { balance: -10 },
-  { balance: 12 },
-  { balance: 0 }
+
+
+
+
+
+
+
+let computers = [
+    {name: 'Apple', ram: 24},
+    {name: 'Compaq', ram: 4},
+    {name: 'Acer', ram: 32}
 ];
 
-let account = accounts.find(function(account) {
-    return account.balance === 12;
+
+
+let allcomputerCanRunProgram = true;
+let onlySomeComputersCanRunProgram = false;
+
+
+for (let i = 0; i < computers.length; i++) {
+    let computer = computers[i];
+
+    if(computer.ram < 16) {
+        allcomputerCanRunProgram = false;
+    } else {
+        onlySomeComputersCanRunProgram = true;
+    }
+
+}
+
+let a = computers.every(function(computer) {
+    return computer.ram > 16;
 });
- 
-console.log(account);
+
+
+
+console.log(allcomputerCanRunProgram);
+console.log(onlySomeComputersCanRunProgram);
+console.log(a);
+
+
+
+
+
+
+
+
+
+
+
 
 
 

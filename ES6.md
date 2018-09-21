@@ -68,6 +68,10 @@ console.log(result);
 // expected output: Array ["exuberant", "destruction", "present"]
 
 ```
+
+
+
+
 <br>
 <br>
 
@@ -87,6 +91,31 @@ console.log(found);
 // expected output: 12
 
 ```
+
+
+
+<br>
+<br>
+
+**Array.prototype.every()**
+<br>
+<br>
+The every() method tests whether **all elements** in the array pass the test implemented by the provided function.
+**Note:** This method returns *true* for any condition put on an empty array.
+
+
+```
+var array1 = [1, 30, 39, 29, 10, 13];
+
+console.log(array1.every(isBelowThreshold));
+// expected output: true
+
+```
+
+
+
+
+
 
 
 

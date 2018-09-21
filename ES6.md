@@ -94,6 +94,7 @@ The find() method returns the value of **only the first** element in the array t
 **We MUST use the 'return' on the iterator function!!!**
 
 <br>
+
 ```
 var array1 = [5, 12, 8, 130, 44];
 

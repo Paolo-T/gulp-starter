@@ -133,7 +133,7 @@ console.log(array1.every(isBelowThreshold));
 <br>
 The some() method tests whether at least one element in the array passes the test implemented by the provided function.
 
-**Note**: This method returns *false* for any condition put on an empty array.
+**Note:** This method returns *false* for any condition put on an empty array.
 
 **We MUST use the 'return' on the iterator function!!!**
 
@@ -149,7 +149,6 @@ var even = function(element) {
 
 console.log(array.some(even));
 // expected output: true
-
 
 ```
 

@@ -17,7 +17,9 @@
 
 <br>
 <br>
-The forEach() method executes a provided function once for each array element.<br>
+The forEach() method executes a provided function once for each array element.
+<br>
+
 **RETURNS: undefined**
 
 ```
@@ -31,8 +33,10 @@ array1.forEach(function(element) {
 // expected output: "b"
 // expected output: "c"
 
-
 ```
+
+
+
 <br>
 <br>
 
@@ -80,8 +84,6 @@ console.log(result);
 ```
 
 
-
-
 <br>
 <br>
 
@@ -106,8 +108,6 @@ console.log(found);
 // expected output: 12
 
 ```
-
-
 
 <br>
 <br>
@@ -145,8 +145,6 @@ The some() method tests whether at least one element in the array passes the tes
 **We MUST use the 'return' on the iterator function!!!**
 
 <br>
-
-
 
 ```
 var array = [1, 2, 3, 4, 5];

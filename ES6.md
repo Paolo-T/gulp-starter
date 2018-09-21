@@ -1,7 +1,7 @@
 
 
 
- *ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 S6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 S6 ES6 ES6 ES6 ES6 ES6 ES6ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 S6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 S6 ES6 ES6 ES6 ES6 ES6 ES6* 
+ *ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 S6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 S6 ES6 ES6 ES6 ES6 ES6 ES6ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 S6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 S6 ES6 ES6 ES6* 
 
 
 <br>
@@ -60,8 +60,11 @@ console.log(map1);
 **Array.prototype.filter()**
 <br>
 <br>
-The filter() method creates a new array with all elements that pass the test implemented by the provided function.<br>
+The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+<br>
+
 **We MUST use the 'return' on the iterator function!!!**
+
 <br>
 
 ```
@@ -84,7 +87,11 @@ console.log(result);
 <br>
 <br>
 The find() method returns the value of **only the first** element in the array that satisfies the provided testing function. Otherwise undefined is returned.
+<br>
 
+**We MUST use the 'return' on the iterator function!!!**
+
+<br>
 ```
 var array1 = [5, 12, 8, 130, 44];
 
@@ -107,7 +114,11 @@ console.log(found);
 <br>
 The every() method tests whether **all elements** in the array pass the test implemented by the provided function.
 **Note:** This method returns *true* for any condition put on an empty array.
+<br>
 
+**We MUST use the 'return' on the iterator function!!!**
+
+<br>
 
 ```
 var array1 = [1, 30, 39, 29, 10, 13];
@@ -117,6 +128,34 @@ console.log(array1.every(isBelowThreshold));
 
 ```
 
+<br>
+<br>
+
+**Array.prototype.some()**
+<br>
+<br>
+The some() method tests whether at least one element in the array passes the test implemented by the provided function.
+
+**Note**: This method returns *false* for any condition put on an empty array.
+<br>
+
+**We MUST use the 'return' on the iterator function!!!**
+
+<br>
+
+```
+var array = [1, 2, 3, 4, 5];
+
+var even = function(element) {
+  // checks whether an element is even
+  return element % 2 === 0;
+};
+
+console.log(array.some(even));
+// expected output: true
+
+
+```
 
 
 

@@ -14,7 +14,6 @@
 ----------------------------------------------------------------
 
 **Array.prototype.forEach()** 
-
 <br>
 <br>
 The forEach() method executes a provided function once for each array element.
@@ -41,7 +40,6 @@ array1.forEach(function(element) {
 <br>
 
 **Array.prototype.map()**
-
 <br>
 <br>
 The map() method creates a new array with the results of calling a provided function on every element in the calling array.<br>
@@ -64,7 +62,6 @@ console.log(map1);
 <br>
 
 **Array.prototype.filter()**
-
 <br>
 <br>
 The filter() method creates a new array with all elements that pass the test implemented by the provided function.
@@ -88,7 +85,6 @@ console.log(result);
 <br>
 
 **Array.prototype.find()**
-
 <br>
 <br>
 The find() method returns the value of **only the first** element in the array that satisfies the provided testing function. Otherwise undefined is returned.
@@ -113,7 +109,6 @@ console.log(found);
 <br>
 
 **Array.prototype.every()**
-
 <br>
 <br>
 The every() method tests whether **all elements** in the array pass the test implemented by the provided function.
@@ -135,13 +130,11 @@ console.log(array1.every(isBelowThreshold));
 <br>
 
 **Array.prototype.some()**
-
 <br>
 <br>
 The some() method tests whether at least one element in the array passes the test implemented by the provided function.
 
 **Note:** This method returns *false* for any condition put on an empty array.
-
 **We MUST use the 'return' on the iterator function!!!**
 
 <br>

@@ -139,6 +139,7 @@ The some() method tests whether at least one element in the array passes the tes
 
 <br>
 
+
 ```
 var array = [1, 2, 3, 4, 5];
 

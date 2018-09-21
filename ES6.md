@@ -61,7 +61,6 @@ console.log(map1);
 <br>
 <br>
 The filter() method creates a new array with all elements that pass the test implemented by the provided function.
-<br>
 
 **We MUST use the 'return' on the iterator function!!!**
 
@@ -87,7 +86,6 @@ console.log(result);
 <br>
 <br>
 The find() method returns the value of **only the first** element in the array that satisfies the provided testing function. Otherwise undefined is returned.
-<br>
 
 **We MUST use the 'return' on the iterator function!!!**
 
@@ -114,7 +112,6 @@ console.log(found);
 <br>
 The every() method tests whether **all elements** in the array pass the test implemented by the provided function.
 **Note:** This method returns *true* for any condition put on an empty array.
-<br>
 
 **We MUST use the 'return' on the iterator function!!!**
 
@@ -137,7 +134,6 @@ console.log(array1.every(isBelowThreshold));
 The some() method tests whether at least one element in the array passes the test implemented by the provided function.
 
 **Note**: This method returns *false* for any condition put on an empty array.
-<br>
 
 **We MUST use the 'return' on the iterator function!!!**
 

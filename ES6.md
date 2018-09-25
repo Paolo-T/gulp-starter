@@ -156,10 +156,25 @@ console.log(array.some(even));
 <br>
 <br>
 The reduce() method executes a reducer function (that you provide) on each member of the array resulting in a single output value.
+**We MUST use the 'return' on the iterator function!!!**
 
 <br>
 
 ```
+//ES5
+
+let vals = [5, 4, 1, 2, 9];
+let sum = 0;
+
+for (let i = 0; i < vals.length; i++) {
+    sum += vals[i];
+}
+
+console.log(sum);
+
+
+//ES6
+
 const array1 = [1, 2, 3, 4];
 const reducer = (accumulator, currentValue) => accumulator + currentValue;
 

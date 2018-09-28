@@ -1,7 +1,7 @@
 
 
 
- *ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 S6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 S6 ES6 ES6 ES6 ES6 ES6 ES6ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 S6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 S6 ES6 ES6 ES6* 
+ *ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 S6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 S6 ES6 ES6 ES6 ES6 ES6 ES6ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 S6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 ES6 S6 ES6 ES6 ES6*
 
 
 <br>
@@ -13,7 +13,7 @@
 
 ----------------------------------------------------------------
 
-**Array.prototype.forEach()** 
+**Array.prototype.forEach()**
 <br>
 <br>
 The forEach() method executes a provided function once for each array element.
@@ -152,13 +152,48 @@ console.log(array.some(even));
 
 ```
 
+**Array.prototype.reduce()**
+<br>
+<br>
+The reduce() method executes a reducer function (that you provide) on each member of the array resulting in a single output value.
+**We MUST use the 'return' on the iterator function!!!**
+
+<br>
+
+```
+//ES5
+
+let vals = [5, 4, 1, 2, 9];
+let sum = 0;
+
+for (let i = 0; i < vals.length; i++) {
+    sum += vals[i];
+}
+
+console.log(sum);
 
 
+//ES6
 
+const array1 = [1, 2, 3, 4];
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
 
+// 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer));
+// expected output: 10
+
+// 5 + 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer, 5));
+// expected output: 15
+
+```
+
+<br>
+<br>
 
 ----------------------------------------------------------------
 
+<<<<<<< HEAD
 ### • Classes
 
 ----------------------------------------------------------------
@@ -210,26 +245,61 @@ console.log(Rectangle.name);
 
 <br
 <br>
-
-#### Hoisting
-
-An important difference between function declarations and class declarations is that function declarations are hoisted and class declarations are not. You first need to declare your class and then access it, otherwise code like the following will throw a *ReferenceError:*
-
-
-----------------------------------------------------------------
-
+=======
 ### • Arrow Functions
 
 ----------------------------------------------------------------
 
+<br>
+An arrow function expression has a shorter syntax than a function expression and does not have its own this, arguments, super, or new.target. These function expressions are best suited for non-method functions, and they cannot be used as constructors.
+
+```
+var materials = [
+  'Hydrogen',
+  'Helium',
+  'Lithium',
+  'Beryllium'
+];
+
+console.log(materials.map(material => material.length));
+// expected output: Array [8, 6, 7, 9]
+>>>>>>> 96ca8402869681989a20a1a3ea0180a965e520dd
+
+#### Hoisting
+
+<<<<<<< HEAD
+An important difference between function declarations and class declarations is that function declarations are hoisted and class declarations are not. You first need to declare your class and then access it, otherwise code like the following will throw a *ReferenceError:*
+=======
+```
+>>>>>>> 96ca8402869681989a20a1a3ea0180a965e520dd
+
+
+<br>
+
+<<<<<<< HEAD
+### • Arrow Functions
+=======
 **Lexical 'this' keyword**
 
+<br>
+<br>
+>>>>>>> 96ca8402869681989a20a1a3ea0180a965e520dd
+
+----------------------------------------------------------------
+
+### • let / const
+
+----------------------------------------------------------------
+
+<<<<<<< HEAD
 ----------------------------------------------------------------
 
 ### • Let / Const
 
 ----------------------------------------------------------------
 
+=======
+>>>>>>> 96ca8402869681989a20a1a3ea0180a965e520dd
 <br>
 
 **Let**
@@ -239,8 +309,20 @@ let allows you to declare variables that are limited in scope to the block, stat
 
 
 
+<br>
+<br>
+
 ----------------------------------------------------------------
 
+<<<<<<< HEAD
+=======
+### • Classes
+
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+
+>>>>>>> 96ca8402869681989a20a1a3ea0180a965e520dd
 ### • Destructuring
 
 ----------------------------------------------------------------
@@ -259,7 +341,7 @@ let allows you to declare variables that are limited in scope to the block, stat
 
 ```
  let someVariableName = new Promise((resolve, reject) => {
-        
+
     });
 
 

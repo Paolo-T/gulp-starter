@@ -159,10 +159,11 @@ console.log(array.some(even));
 
 ----------------------------------------------------------------
 
-### Classes
+### • Classes
 
 ----------------------------------------------------------------
 
+Classes are in fact *special functions*, and just as you can define *function expressions* and *function declarations*, the class syntax has two components: **class expressions** and **class declarations**.
 
 
 
@@ -171,13 +172,18 @@ console.log(array.some(even));
 
 ----------------------------------------------------------------
 
-### Arrow Functions
+### • Arrow Functions
 
 ----------------------------------------------------------------
 
 **Lexical 'this' keyword**
 
-### Let / Const
+----------------------------------------------------------------
+
+### • Let / Const
+
+----------------------------------------------------------------
+
 <br>
 
 **Let**
@@ -189,7 +195,7 @@ let allows you to declare variables that are limited in scope to the block, stat
 
 ----------------------------------------------------------------
 
-### Destructuring
+### • Destructuring
 
 ----------------------------------------------------------------
 
@@ -201,7 +207,7 @@ let allows you to declare variables that are limited in scope to the block, stat
 
 ----------------------------------------------------------------
 
-### Promises
+### • Promises
 
 ----------------------------------------------------------------
 
@@ -219,6 +225,6 @@ let allows you to declare variables that are limited in scope to the block, stat
 
 ----------------------------------------------------------------
 
-### Async / Await
+### • Async / Await
 
 ----------------------------------------------------------------

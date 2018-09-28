@@ -249,12 +249,9 @@ console.log(Rectangle.name);
 
 <<<<<<< HEAD
 An important difference between function declarations and class declarations is that function declarations are hoisted and class declarations are not. You first need to declare your class and then access it, otherwise code like the following will throw a *ReferenceError:*
-=======
-```
->>>>>>> 96ca8402869681989a20a1a3ea0180a965e520dd
 
 
-<br>
+----------------------------------------------------------------
 
 <<<<<<< HEAD
 ### • Arrow Functions

@@ -11,17 +11,17 @@
 
 
 
+function addNumbers(...numbers) {
+    return numbers.reduce((sum, number) => {
+        return sum + number;
+    }, 0);
+
+}
+
+console.log(addNumbers(1, 2, 3, 4, 5, 6, 7));
 
 
 
-function doubleMessage(number) {
-    const number2 = (2 * number);
-
-    console.log(`Your number doubled is ${number2}`);
-};
-
-
-doubleMessage(2);
 
 
 

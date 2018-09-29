@@ -294,6 +294,38 @@ console.log(rest);
 ```
 
 #### Synthax
+The object and array literal expressions provide an easy way to create ad hoc packages of data.
+<br>
+On the left-hand side of the assignment to define what values to unpack from the sourced variable.
+<br>
+
+**Array destructuring**
+
+```
+var x = [1, 2, 3, 4, 5];
+
+var [y, z] = x;
+
+console.log(y); // 1
+console.log(z); // 2
+
+```
+<br>
+
+**Object destructuring**
+
+```
+var o = {p: 42, q: true};
+
+var {p, q} = o;
+
+console.log(p); // 42
+console.log(q); // true
+
+```
+<br>
+
+examples:
 
 ```
 var a, b, rest;

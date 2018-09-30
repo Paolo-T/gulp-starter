@@ -266,9 +266,41 @@ class Rectangle {
 ```
 
 <br>
+
 **The constructor**
+
 <br>
 The constructor method is a special method for creating and initializing an object created with a class. There can only be one special method with the name "constructor" in a class. A SyntaxError will be thrown if the class contains more than one occurrence of a constructor method.
+
+<br>
+<br>
+
+####Prototype methods
+
+```
+class Rectangle {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+  // Getter
+  get area() {
+    return this.calcArea();
+  }
+  // Method
+  calcArea() {
+    return this.height * this.width;
+  }
+}
+
+const square = new Rectangle(10, 10);
+
+console.log(square.area); // 100
+
+```
+
+<br>
+<br>
 
 ---------------------------------------------------------------
 ### • Destructuring

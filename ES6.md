@@ -268,6 +268,11 @@ let allows you to declare variables that are limited in scope to the block, stat
 ### • Classes
 ----------------------------------------------------------------
 
+Classes are in fact *special functions*, and just as you can define function expressions and function declarations, the class syntax has two components: class expressions and class declarations.
+<br>
+re primarily syntactical sugar over JavaScript's existing prototype-based inheritance. The class syntax does not introduce a new object-oriented inheritance model to JavaScript.
+
+
 
 
 ---------------------------------------------------------------
@@ -275,23 +280,6 @@ let allows you to declare variables that are limited in scope to the block, stat
 ----------------------------------------------------------------
 
 The **destructuring assignment syntax** is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
-
-```
-var a, b, rest;
-[a, b] = [10, 20];
-
-console.log(a);
-// expected output: 10
-
-console.log(b);
-// expected output: 20
-
-[a, b, ...rest] = [10, 20, 30, 40, 50];
-
-console.log(rest);
-// expected output: [30,40,50]
-
-```
 
 #### Synthax
 The object and array literal expressions provide an easy way to create ad hoc packages of data.

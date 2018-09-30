@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+
+// const cars = [
+//     'Fiat',
+//     'Ferrari',
+//     'jaguar',
+//     'Maserati',
+//     'Porsche'
+// ];
+
+
+// const [ car1, car2, car3, ...rest ] = cars;
+// console.log(rest);
+
+
+// const points = [
+//     [4, 5],
+//     [10, 1],
+//     [0, 40]
+// ];
+
+// let coordinates = points.map(([ x, y ]) => {
+//     return { x, y };
+// });
+
+// console.log(coordinates);
+
+
+
+
+// const classes = [
+//   [ 'Chemistry', '9AM', 'Mr. Darnick' ],
+//   [ 'Physics', '10:15AM', 'Mrs. Lithun'],
+//   [ 'Math', '11:30AM', 'Mrs. Vitalis' ]
+// ];
+
+// const classesAsObject = classes.map(([subject, time, teacher]) => {
+//     return { subject, time, teacher };
+// });
+
+// console.log(classesAsObject);
+
+
+
+
+
+
+class Car {
+    constructor({ title }) {
+        this.title = title;
+    }
+    drive() {
+        return 'vroom';
+    }
+}
+
+
+
+class Toyota extends Car {
+    constructor(options) {
+        super(options);
+        this.color = options.color;
+        this.title = options.title;
+    }
+
+    honk() {
+        return 'beep';
+    }
+}
+
+const toyota = new Toyota({ color: 'red', title: 'supercar' });
+
+console.log(toyota.drive());
+console.log(toyota.color);
+console.log(toyota.title);
+
+
+
+    </script>
+</body>
+</html>

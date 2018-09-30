@@ -248,12 +248,13 @@ Classes are in fact *special functions*, and just as you can define function exp
 Primarily syntactical sugar over JavaScript's existing prototype-based inheritance. The class syntax does not introduce a new object-oriented inheritance model to JavaScript.
 <br>
 <br>
+
 **Hoisting**
 An important difference between function declarations and class declarations is that function declarations are hoisted and **class declarations are not hoisted**. You first need to declare your class and then access it, otherwise code like the following will throw a ReferenceError:
 <br>
 <br>
 
-####Class declarations
+#### Class declarations
 
 ```
 class Rectangle {
@@ -275,7 +276,7 @@ The constructor method is a special method for creating and initializing an obje
 <br>
 <br>
 
-####Prototype methods
+#### Prototype methods
 
 ```
 class Rectangle {

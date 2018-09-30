@@ -8,7 +8,7 @@
 ### • Array helper
 ----------------------------------------------------------------
 
-
+**for...of**
 
 
 **Array.prototype.forEach()**
@@ -379,14 +379,56 @@ console.log(rest); // {c: 30, d: 40}
 ### • Promises
 ----------------------------------------------------------------
 
-```
- let someVariableName = new Promise((resolve, reject) => {
+A promise is a container for a future value.
 
-    });
 
 ```
+const myPromise = new Promise((resolve, reject) => {
+    if (Math.random() * 100 <= 90) {
+        resolve('Hello, Promises!');
+    }
+        reject(new Error('In 10% of the cases, I fail. Miserably.'));
+});
+
+// Two functions
+const onResolved = (resolvedValue) => console.log(resolvedValue);
+const onRejected = (error) => console.log(error);
+
+myPromise.then(onResolved, onRejected);
+
+// Same as above, written concisely
+myPromise.then((resolvedValue) => {
+    console.log(resolvedValue);
+}, (error) => {
+    console.log(error);
+});
+
+// Output (in 90% of the cases)
+
+// resolving the promise ...
+// Hello, Promises!
+// Hello, Promises!
 
 
+```
+<br>
+<br>
+
+#### .then()
+Accepts two callbacks. The first callback is invoked when the promise is **resolved**. The second callback is executed when the promise is **rejected**.
+
+#### .catch()
+Is just a syntactical sugar for .then(undefined, onRejected).
+
+<br>
+
+**Note:**
+.then() and .catch() methods always return a promise. So you can chain multiple .then calls together.
+
+
+
+<br>
+<br>
 
 ----------------------------------------------------------------
 ### • Async / Await

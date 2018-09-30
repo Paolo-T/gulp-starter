@@ -236,33 +236,8 @@ let allows you to declare variables that are limited in scope to the block, stat
 
 **Spread syntax** allows an iterable such as an array expression or string to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.
 
-
-
-
-----------------------------------------------------------------
-### • Classes
-----------------------------------------------------------------
-
-----------------------------------------------------------------
-### • Promises
-----------------------------------------------------------------
-
-```
- let someVariableName = new Promise((resolve, reject) => {
-
-    });
-
-
-```
-
-
-
-
-
-----------------------------------------------------------------
-### • Async / Await
-----------------------------------------------------------------
-
+<br>
+<br>
 
 ----------------------------------------------------------------
 ### • Classes
@@ -270,10 +245,30 @@ let allows you to declare variables that are limited in scope to the block, stat
 
 Classes are in fact *special functions*, and just as you can define function expressions and function declarations, the class syntax has two components: class expressions and class declarations.
 <br>
-re primarily syntactical sugar over JavaScript's existing prototype-based inheritance. The class syntax does not introduce a new object-oriented inheritance model to JavaScript.
+Primarily syntactical sugar over JavaScript's existing prototype-based inheritance. The class syntax does not introduce a new object-oriented inheritance model to JavaScript.
+<br>
+<br>
+**Hoisting**
+An important difference between function declarations and class declarations is that function declarations are hoisted and **class declarations are not hoisted**. You first need to declare your class and then access it, otherwise code like the following will throw a ReferenceError:
+<br>
+<br>
 
+####Class declarations
 
+```
+class Rectangle {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+}
 
+```
+
+<br>
+**The constructor**
+<br>
+The constructor method is a special method for creating and initializing an object created with a class. There can only be one special method with the name "constructor" in a class. A SyntaxError will be thrown if the class contains more than one occurrence of a constructor method.
 
 ---------------------------------------------------------------
 ### • Destructuring

@@ -189,6 +189,32 @@ console.log(array1.reduce(reducer, 5));
 <br>
 <br>
 
+
+<br>
+<br>
+
+**Array.prototype.sort()**
+<br>
+<br>
+The sort() method sorts the elements of an array in place and returns the array. Javascript sort algorithm on V8 is now stable. The default sort order is according to string Unicode code points.
+
+The time and space complexity of the sort cannot be guaranteed as it is implementation dependent.
+
+```
+function compare(a, b) {
+  if (a is less than b by some ordering criterion) {
+    return -1;
+  }
+  if (a is greater than b by the ordering criterion) {
+    return 1;
+  }
+  // a must be equal to b
+  return 0;
+}
+```
+
+
+
 ----------------------------------------------------------------
 ### •Arrow Functions
 ----------------------------------------------------------------

@@ -36,6 +36,8 @@ array1.forEach(function(element) {
 
 <br>
 <br>
+<br>
+<br>
 
 **Array.prototype.map()**
 <br>
@@ -56,6 +58,8 @@ console.log(map1);
 
 ```
 
+<br>
+<br>
 <br>
 <br>
 
@@ -79,6 +83,8 @@ console.log(result);
 ```
 
 
+<br>
+<br>
 <br>
 <br>
 
@@ -105,6 +111,8 @@ console.log(found);
 
 <br>
 <br>
+<br>
+<br>
 
 **Array.prototype.every()**
 <br>
@@ -124,6 +132,8 @@ console.log(array1.every(isBelowThreshold));
 
 ```
 
+<br>
+<br>
 <br>
 <br>
 
@@ -149,6 +159,10 @@ console.log(array.some(even));
 // expected output: true
 
 ```
+<br>
+<br>
+<br>
+<br>
 
 **Array.prototype.reduce()**
 <br>
@@ -188,8 +202,6 @@ console.log(array1.reduce(reducer, 5));
 
 <br>
 <br>
-
-
 <br>
 <br>
 

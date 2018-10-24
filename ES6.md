@@ -223,6 +223,11 @@ function compare(a, b) {
 The splice() method changes the contents of an array by removing existing elements and/or adding new elements.
 
 ```
+array.splice(start[, deleteCount[, item1[, item2[, ...]]]])
+
+```
+
+```
 var months = ['Jan', 'March', 'April', 'June'];
 months.splice(1, 0, 'Feb');
 // inserts at 1st index position

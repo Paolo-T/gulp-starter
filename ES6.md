@@ -458,6 +458,7 @@ console.log(rest); // {c: 30, d: 40}
 ----------------------------------------------------------------
 
 A promise is a container for a future value.
+The Promise object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.
 
 
 ```

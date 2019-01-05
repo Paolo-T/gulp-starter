@@ -50,8 +50,7 @@ const budgetController = (function() {
         this.value = value;
     };
 
-    // Object containing data from
-    let data = {
+    let Data = {
         allItems: {
             exp: [],
             inc: []
@@ -62,36 +61,7 @@ const budgetController = (function() {
         }
     };
 
-    return {
-        addItem: function(type, des, val) {
-            let newItem;
 
-            // Create a preogressive ID number
-            if (data.allItems[type].length > 0) {
-                ID = data.allItems[type][Data.allItems[type].length - 1].id + 1;
-            } else {
-                ID = 0;
-            }
-
-
-            // Create a new item based on 'inc or 'exp
-            if (type === 'exp') {
-                newItem = new Expense(ID, des, val);
-            } else if (type === 'inc') {
-                newItem = new Income(ID, des, val);
-            }
-
-            // Push new Item into data structure array
-            data.allItems[type].push(newItem);
-
-            //return the new element
-            return newItem;
-        },
-
-        testing: function() {
-            console.log(data);
-        }
-    }
 }());
 
 
@@ -115,24 +85,19 @@ const appController = (function(UIctrl, budgetCtrl) {
     }
 
     function ctrlAddItem() {
-        let input, newItem;
 
         // 1. Get the field input Data
-        input = UIController.getInput();
-        // console.log(input);
+        let input = UIController.getInput();
+        console.log({input});
 
         // 2. Add the Item to the budget controller
-        newItem = budgetController.addItem(input.type, input.description, input.value);
+
         // 3. Add the Item to the UI
 
         // 4. Calculate the budget
 
         // 5. Display the budget to the UI
-
-
-        let testing = budgetController.testing();
-        console.log(testing);
-
+;
     };
 
 

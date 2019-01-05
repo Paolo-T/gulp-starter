@@ -63,62 +63,33 @@ const budgetController = (function() {
     };
 
     return {
-
         addItem: function(type, des, val) {
             let newItem;
 
+            // Create a preogressive ID number
             if (data.allItems[type].length > 0) {
-                ID = data.allItems[type][data.allItems[type].length - 1].id + 1;
+                ID = data.allItems[type][Data.allItems[type].length - 1].id + 1;
             } else {
                 ID = 0;
             }
-            // Create new item based on 'inc' or 'exp' type
+
+
+            // Create a new item based on 'inc or 'exp
             if (type === 'exp') {
                 newItem = new Expense(ID, des, val);
             } else if (type === 'inc') {
                 newItem = new Income(ID, des, val);
             }
 
-            // Push it into our data structure
+            // Push new Item into data structure array
             data.allItems[type].push(newItem);
 
-            // Return the new element
+            //return the new element
             return newItem;
         },
 
-
-
-
-
-
-
-        // addItem: function(type, des, val) {
-        //     let newItem;
-
-        //     // Create a preogressive ID number
-        //     if (data.allItems[type].length > 0) {
-        //         ID = data.allItems[type][Data.allItems[type].length - 1].id + 1;
-        //     } else {
-        //         ID = 0;
-        //     }
-
-
-        //     // Create a new item based on 'inc or 'exp
-        //     if (type === 'exp') {
-        //         newItem = new Expense(ID, des, val);
-        //     } else if (type === 'inc') {
-        //         newItem = new Income(ID, des, val);
-        //     }
-
-        //     // Push new Item into data structure array
-        //     data.allItems[type].push(newItem);
-
-        //     //return the new element
-        //     return newItem;
-        // },
-
         testing: function() {
-            console.log({data});
+            console.log(data);
         }
     }
 }());
@@ -157,7 +128,11 @@ const appController = (function(UIctrl, budgetCtrl) {
         // 4. Calculate the budget
 
         // 5. Display the budget to the UI
-;
+
+
+        let testing = budgetController.testing();
+        console.log(testing);
+
     };
 
 

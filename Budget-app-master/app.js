@@ -50,7 +50,7 @@ const budgetController = (function() {
         this.value = value;
     };
 
-    let Data = {
+    let data = {
         allItems: {
             exp: [],
             inc: []
@@ -60,6 +60,24 @@ const budgetController = (function() {
             inc: 0
         }
     };
+
+    return {
+        addItem: function(type, des, value) {
+            let newItem;
+
+            ID =
+
+            if (type === 'exp') {
+                newItem = new Expense(ID, des, value);
+            } else if (type === 'inc') {
+                newItem = new Income(ID, des, value);
+            }
+            return newItem;
+        },
+        testing: function() {
+            console.log(newItem);
+        }
+    }
 
 
 }());
@@ -88,7 +106,7 @@ const appController = (function(UIctrl, budgetCtrl) {
 
         // 1. Get the field input Data
         let input = UIController.getInput();
-        console.log({input});
+        // console.log({input});
 
         // 2. Add the Item to the budget controller
 
@@ -97,7 +115,9 @@ const appController = (function(UIctrl, budgetCtrl) {
         // 4. Calculate the budget
 
         // 5. Display the budget to the UI
-;
+        let test = budgetController.testing();
+        console.log(test);
+
     };
 
 

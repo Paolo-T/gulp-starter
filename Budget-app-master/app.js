@@ -63,7 +63,7 @@ const budgetController = (function() {
     return {
         addItem: function(type, des, val) {
             let newItem;
-            newItem = new Expense(ID, des, value);
+            newItem = snew Expense(ID, des, value);
         }
     }
 

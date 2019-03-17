@@ -4,7 +4,7 @@ const browserSync = require('browser-sync').create;
 const cleanCSS = require('clean-css');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
-const imgmin = require('gulp-imagemin');
+const imagemin = require('gulp-imagemin');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 
@@ -50,6 +50,7 @@ function imgmin() {
 function watch() {
 	browserSync.init({
 		server: {
+			open: 'external',
 			baseDir: './src/'
 		}
 	});
@@ -60,3 +61,8 @@ function watch() {
 
 exports.styles = styles;
 exports.watch = watch;
+exports.javascript = javascript;
+exports.watch = watch;
+
+const build = gulp.parallel(watch);
+gulp.task('default', build);

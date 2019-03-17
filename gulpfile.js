@@ -1,26 +1,50 @@
 const gulp = require('gulp');
-const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
+const browserSync = require('browser-sync').create;
+const cleanCSS = require('clean-css');
+const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const imgmin = require('gulp-imagemin');
-const browserSync = require('browser-sync').create;
+const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
 
 // Compile sass
 function styles() {
-	return (
-		gulp
-			// 1. Where is my my sass file
-			.src('./src/assets/sass/main.sass')
-			// 2. pass the file through the sass compiler
-			.pipe(
-				sass({
-					ouputStyle: 'expanded'
-				}).on('error', sass.logError)
-			)
-			// 3. Where do I save the compiled css?
-			.pipe(gulp.dest('./dist/assets/css/'))
-			// 4. Stream changes to all browsers
-			.pipe(browserSync.stream())
-	);
+	return gulp
+		.src('./src/assets/sass/main.sass')
+		.pipe(sourcemaps.init({ loadMaps: true }))
+		.pipe(
+			sass({
+				ouputStyle: 'expanded'
+			}).on('error', sass.logError)
+		)
+		.pipe(autoprefixer('last 2 versions'))
+		.pipe(sourcemaps.write())
+		.pipe(gulp.dest('dist/assets/css/'))
+		.pipe(cleanCSS)
+		.pipe(browserSync.stream());
+}
+
+function javascript() {
+	return gulp
+		.src('src/assets/js/*')
+		.pipe(concat('src / assets / js'))
+		.pipe(uglify())
+		.pipe(gulp.dest('dist / js'));
+}
+
+function imgmin() {
+	return gulp
+		.src('src/assets/img/*')
+		.pipe(changed('dist/img'))
+		.pipe(
+			imagemin([
+				imagemin.gifscicle({ interlaced: true }),
+				imagemin.jpegtran({ progressive: true }),
+				imagemin.optipng({ optimizationLevel: 5 })
+			])
+		)
+		.pipe(gulp.dest('dist/img'));
 }
 
 function watch() {

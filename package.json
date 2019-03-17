@@ -1,24 +1,21 @@
 {
-  "name": "gulp.js-starter",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Paolo-T/gulp.js-starter.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Paolo-T/gulp.js-starter/issues"
-  },
-  "homepage": "https://github.com/Paolo-T/gulp.js-starter#readme",
-  "devDependencies": {
-    "browser-sync": "^2.26.3",
-    "gulp": "^4.0.0",
-    "gulp-sass": "^4.0.2"
-  }
+	"name": "gulp.js-starter",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.html",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Paolo-T/gulp.js-starter.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"homepage": "https://github.com/Paolo-T/gulp.js-starter#readme",
+	"devDependencies": {
+		"browser-sync": "^2.26.3",
+		"gulp": "^4.0.0",
+		"gulp-sass": "^4.0.2"
+	}
 }

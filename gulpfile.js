@@ -12,7 +12,7 @@ const sourcemaps = require('gulp-sourcemaps');
 function styles() {
 	return (
 		gulp
-			.src('src/assets/main.sass')
+			.src('src/assets/sass/main.sass')
 			.pipe(sourcemaps.init({ loadMaps: true }))
 			.pipe(
 				sass({
@@ -30,14 +30,14 @@ function styles() {
 function javascript() {
 	return gulp
 		.src('src/assets/js/*')
-		.pipe(concat('src / assets / js'))
+		.pipe(concat('src/assets/js'))
 		.pipe(uglify())
-		.pipe(gulp.dest('dist / assets /js'));
+		.pipe(gulp.dest('dist/assets/js'));
 }
 
 function imgmin() {
 	return gulp
-		.src('src/assets/img/*.*')
+		.src('src/assets/img/*.*/*')
 		.pipe(changed('dist/assets/img'))
 		.pipe(
 			imagemin([
@@ -50,17 +50,15 @@ function imgmin() {
 }
 
 function watch() {
-	browserSync.init(
-		{
+	browserSync.init({
 			server: {
 				open: 'external',
 				baseDir: './'
 			}
-		}
-	);
+		});
 	gulp.watch('src/assets/sass/main.sass', styles);
 	gulp.watch('src/assets/img', imgmin);
-	gulp.watch('./*.html').on('change', browserSync.reload);
+	gulp.watch('*.html').on('change', browserSync.reload);
 	gulp.watch('src/assets/**/*.js').on('change', browserSync.reload);
 }
 

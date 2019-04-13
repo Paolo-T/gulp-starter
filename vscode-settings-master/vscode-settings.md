@@ -1,5 +1,5 @@
 
-## Extensions
+## Installed Extensions
 
 * m.html-snippets-0.2.1
 * akamud.vscode-theme-onedark-2.1.0
@@ -26,6 +26,7 @@
 * wallabyjs.quokka-vscode-1.0.150
 * wallabyjs.quokka-vscode-1.0.151
 * wesbos.theme-cobalt2-2.1.6
+* quokka.js
 
 
 <br>
@@ -36,26 +37,27 @@
 ```
 
 {
-
-
-  "editor.fontSize": 14,
-  "editor.lineHeight": 21,
-  "editor.letterSpacing": 0.1,
-  "files.trimTrailingWhitespace": true,
-  "prettier.eslintIntegration": true,
-  "editor.cursorStyle": "line",
-  "editor.cursorWidth": 5,
-  "editor.cursorBlinking": "solid",
-  "editor.renderWhitespace": "all",
-  "workbench.colorTheme": "Cobalt2",
-  "terminal.integrated.fontFamily": "Menlo",
-  "editor.renderIndentGuides": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.fontFamily": "Fira Code",
-  "editor.fontLigatures": true,
-  "editor.fontWeight": "500",
-  "vsicons.dontShowNewVersionMessage": true,
-  "editor.wordWrap": "on",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "editor.renderIndentGuides": false,
+    "editor.fontSize": 14,
+    "editor.lineHeight": 21,
+    "editor.letterSpacing": 0.1,
+    "files.trimTrailingWhitespace": true,
+    "prettier.eslintIntegration": true,
+    "editor.cursorStyle": "line",
+    "editor.cursorWidth": 3,
+    "editor.cursorBlinking": "blink",
+    "editor.renderWhitespace": "all",
+    "workbench.colorTheme": "Cobalt2",
+    "terminal.integrated.fontFamily": "Menlo",
+    "editor.renderIndentGuides": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontWeight": "400",
+    "vsicons.dontShowNewVersionMessage": true,
+    "editor.wordWrap": "on",
 }
 
 

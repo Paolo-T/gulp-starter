@@ -10,7 +10,7 @@
 		"type": "git",
 		"url": ""
 	},
-	"author": "Paolo Todde",
+	"author": "",
 	"license": "ISC",
 	"devDependencies": {
 		"browser-sync": "^2.26.3",

@@ -50,12 +50,14 @@ function imgmin() {
 }
 
 function watch() {
-	browserSync.init({
-		server: {
-			open: 'external',
-			baseDir: './'
+	browserSync.init(
+		{
+			server: {
+				open: 'external',
+				baseDir: './'
+			}
 		}
-	});
+	);
 	gulp.watch('src/assets/sass/main.sass', styles);
 	gulp.watch('src/assets/img', imgmin);
 	gulp.watch('./*.html').on('change', browserSync.reload);

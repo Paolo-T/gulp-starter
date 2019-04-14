@@ -9,7 +9,7 @@ const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 
 
-
+// Path sources and destinations
 const PATH = {
 	style: {
 		src: 'src/assets/sass/main.sass',
@@ -26,7 +26,7 @@ const PATH = {
 };
 
 
-// Compile sass
+// Compile sass into css
 function styles() {
 	return (
 		gulp
@@ -45,6 +45,8 @@ function styles() {
 	);
 }
 
+
+// Concatenate javascript files
 function javascript() {
 	return gulp
 		.src(PATH.javascript.src)
@@ -53,6 +55,8 @@ function javascript() {
 		.pipe(gulp.dest(PATH.javascript.dest));
 }
 
+
+// Optimize images
 function imgmin() {
 	return gulp
 		.src(PATH.images.src)
@@ -67,6 +71,7 @@ function imgmin() {
 		.pipe(gulp.dest(PATH.images.dest));
 }
 
+// Watch for changes
 function watch() {
 	browserSync.init({
 			server: {
@@ -81,10 +86,12 @@ function watch() {
 	gulp.watch(PATH.javascript.src).on('change', browserSync.reload);
 }
 
+// Export all the tasks
 exports.styles = styles;
 exports.imgmin = imgmin;
 exports.javascript = javascript;
 exports.watch = watch;
 
+// Default function
 const build = gulp.parallel(watch);
 gulp.task('default', build);

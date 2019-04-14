@@ -1,18 +1,36 @@
 const gulp = require('gulp');
 const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
-const cleanCSS = require('clean-css');
+const cleanCSS = require('gulp-clean-css');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 
+
+
+const PATH = {
+	style: {
+		src: 'src/assets/sass/main.sass',
+		dest: 'dist/assets/css/',
+	},
+	javascript: {
+		src: 'src/assets/**/*.js',
+		dest: 'dist/assets/js/'
+	},
+	images: {
+		src: 'src/assets/img/*.*/*',
+		dest: 'dist/assets/img/'
+	}
+};
+
+
 // Compile sass
 function styles() {
 	return (
 		gulp
-			.src('src/assets/sass/main.sass')
+			.src(PATH.style.src)
 			.pipe(sourcemaps.init({ loadMaps: true }))
 			.pipe(
 				sass({
@@ -21,24 +39,24 @@ function styles() {
 			)
 			.pipe(autoprefixer('last 2 versions'))
 			.pipe(sourcemaps.write())
-			// .pipe(cleanCSS)
-			.pipe(gulp.dest('dist/assets/css/'))
+			.pipe(cleanCSS({compatibility: 'ie8'}))
+			.pipe(gulp.dest(PATH.style.dest))
 			.pipe(browserSync.stream())
 	);
 }
 
 function javascript() {
 	return gulp
-		.src('src/assets/js/*')
-		.pipe(concat('src/assets/js'))
+		.src(PATH.javascript.src)
+		.pipe(concat(PATH.javascript.src))
 		.pipe(uglify())
-		.pipe(gulp.dest('dist/assets/js'));
+		.pipe(gulp.dest(PATH.javascript.dest));
 }
 
 function imgmin() {
 	return gulp
-		.src('src/assets/img/*.*/*')
-		.pipe(changed('dist/assets/img'))
+		.src(PATH.images.src)
+		.pipe(changed(PATH.images.dest))
 		.pipe(
 			imagemin([
 				imagemin.gifscicle({ interlaced: true }),
@@ -46,7 +64,7 @@ function imgmin() {
 				imagemin.optipng({ optimizationLevel: 5 })
 			])
 		)
-		.pipe(gulp.dest('dist/img'));
+		.pipe(gulp.dest(PATH.images.dest));
 }
 
 function watch() {
@@ -54,12 +72,13 @@ function watch() {
 			server: {
 				open: 'external',
 				baseDir: './'
-			}
+			},
+			port: 3000
 		});
-	gulp.watch('src/assets/sass/main.sass', styles);
-	gulp.watch('src/assets/img', imgmin);
+	gulp.watch(PATH.style.src, styles);
+	gulp.watch(PATH.images.src, imgmin);
 	gulp.watch('*.html').on('change', browserSync.reload);
-	gulp.watch('src/assets/**/*.js').on('change', browserSync.reload);
+	gulp.watch(PATH.javascript.src).on('change', browserSync.reload);
 }
 
 exports.styles = styles;

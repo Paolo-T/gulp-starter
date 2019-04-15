@@ -12,7 +12,7 @@ const sourcemaps = require('gulp-sourcemaps');
 // Path sources and destinations
 const PATH = {
 	style: {
-		src: 'src/assets/sass/main.sass',
+		src: 'src/assets/sass/**/*.*',
 		dest: 'dist/assets/css/',
 	},
 	javascript: {

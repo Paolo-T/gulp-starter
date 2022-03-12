@@ -15,12 +15,12 @@ function About() {
    `)
 
    return (
-      <section id="about" className="md:pt-0-10 md:pb-10">
-         <div className="md:flex pb-10 md:pb-20 items-center">
+      <section id="about" className="mt-24 md:mt-10 md:mb-10">
+         <div className="md:flex px-8 pb-10 md:pb-20 items-center">
             <GatsbyImage
                image={data.profileImg.childImageSharp.gatsbyImageData}
                alt="Paolo illustration"
-               className="w-3/12 md:w-3/12 mx-auto rounded-full"
+               className="w-5/12 md:w-3/12 mx-auto rounded-full"
                loading="eager"
             />
             <div className="md:w-7/12 md:pl-10 mt-10 md:mt-0 md:pr-28">
@@ -61,7 +61,7 @@ function About() {
                   .
                </p>
 
-               <ul className="flex text-5xl justify-between mt-16 text-grey">
+               <ul className="md:flex text-5xl justify-between mt-16 text-grey">
                   <li>UI/UX</li>
                   <li>Design Systems</li>
                   <li>Interactions</li>

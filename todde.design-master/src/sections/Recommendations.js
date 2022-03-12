@@ -49,7 +49,7 @@ function Reccomendations() {
    ]
 
    return (
-      <section className="mt-28 md:mt-20">
+      <section className="mt-10 md:mt-20">
          <h2 className="mb-20 text-center">Recommendations</h2>
          <div
             className="w-100 mx-auto md:m-0

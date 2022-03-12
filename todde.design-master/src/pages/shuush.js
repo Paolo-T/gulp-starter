@@ -3,7 +3,7 @@ import SEO from "../components/Seo"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import TransitionPageIn from "../components/TransitionPageIn"
-import ImgTiles from "../components/ImgTiles"
+import ImgTiles from "../sections/ImgTiles"
 
 function Shuush() {
    const imageData = useStaticQuery(graphql`

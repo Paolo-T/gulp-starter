@@ -3,11 +3,11 @@ import SEO from "../components/Seo"
 // import { Parallax, ParallaxLayer } from "@react-spring/parallax"
 import TransitionPageIn from "../components/TransitionPageIn"
 import TransitionInview from "../components/TransitionInview"
-import ImgTiles from "../components/ImgTiles"
-import About from "../components/sections/About"
-import Recommendations from "../components/sections/Recommendations"
-import SideProjects from "../components/sections/SideProjects"
-import Hero from "../components/sections/Hero"
+import ImgTiles from "../sections/ImgTiles"
+import About from "../sections/About"
+import Recommendations from "../sections/Recommendations"
+import SideProjects from "../sections/SideProjects"
+import Hero from "../sections/Hero"
 
 function Home() {
    return (

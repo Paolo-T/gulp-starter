@@ -1,5 +1,5 @@
 import React from "react"
-import TransitionInview from "../TransitionInview"
+import TransitionInview from "../components/TransitionInview"
 
 function Reccomendations() {
 

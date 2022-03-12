@@ -4,7 +4,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import TransitionPageIn from "../components/TransitionPageIn"
 import Card from "../components/Card"
 import { GatsbyImage } from "gatsby-plugin-image"
-import ImgTiles from "../components/ImgTiles"
+import ImgTiles from "../sections/ImgTiles"
 
 import persona_image_1 from "../images/petTime/petTime_persona_1.png"
 import persona_image_2 from "../images/petTime/petTime_persona_2.png"

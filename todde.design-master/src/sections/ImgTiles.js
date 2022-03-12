@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import ImgTile from "./ImgTile"
-import TransitionInview from "./TransitionInview"
+import ImgTile from "../components/ImgTile"
+import TransitionInview from "../components/TransitionInview"
 
 function ImgTiles({ isPageNav }) {
    // const pageLocation = typeof window !== "undefined" ? window.location.pathname : "";

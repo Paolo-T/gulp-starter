@@ -15,7 +15,7 @@ function About() {
    `)
 
    return (
-      <section className="md:pt-0-10 md:pb-28">
+      <section className="md:pt-0-10 md:pb-10">
          <div className="md:flex pb-10 md:pb-20 items-center">
             <GatsbyImage
                image={data.profileImg.childImageSharp.gatsbyImageData}

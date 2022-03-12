@@ -8,12 +8,12 @@ function TransitionInView({ children }) {
       rootMargin: "0px 0px",
    })
 
-   const spring = { mass: 1, tension: 300, friction: 60 }
+   const spring = { mass: 1, tension: 300, friction: 80 }
 
    const props = useSpring({
       config: spring,
       opacity: visible ? 1 : 0,
-      transform: visible ? `translate3d(0,0rem,0)` : `translate3d(0,1rem,0)`,
+      transform: visible ? `translate3d(0,0rem,0)` : `translate3d(0,5rem,0)`,
    })
 
    useEffect(() => {

@@ -1,0 +1,41 @@
+html {
+   /* background-color: #121212; */
+   /* background-color: #181a1c; */
+   /* background-color: #121212; */
+   /* background-color: #101013; */
+   scroll-behavior: smooth;
+   background-color: #101014;
+}
+
+body {
+   text-rendering: auto;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   /* color: #0f1419; */
+   /* color: #e1e1e1; */
+   /* color: #6b7280; */
+   /* color: #6b6d70; */
+   color: #ffffff;
+}
+
+/* Title gradient animation */
+/* .anim-gradient {
+   color: #ffad1e;
+   -webkit-animation: flow 5s linear infinite;
+   background-image: -webkit-linear-gradient(-60deg, #ffad1e, #ffed42 60%, #ffad1e, #ffed42);
+   background-size: 300%;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+@-webkit-keyframes flow {
+   0% {
+      background-position: 0% 100%;
+   }
+   50% {
+      background-position: 100% 0%;
+   }
+   100% {
+      background-position: 0% 100%;
+   }
+} */

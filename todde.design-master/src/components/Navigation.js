@@ -20,13 +20,13 @@ function Navigation() {
                         </Link>
                      </li>
                      <ul className="md:flex-1 flex justify-end">
-                        {/* <li className="hover:text-grey transition duration-300 ease-in-out">
-                           <Link to="/about">
+                        <li className="hover:text-grey transition duration-300 ease-in-out">
+                           <Link to="#about">
                               <span className="inline-block text-base md:text-lg md:pt-2 pb-1 align-baseline">
                                  About
                               </span>
                            </Link>
-                        </li> */}
+                        </li>
                         <li className="hover:text-grey transition duration-300 ease-in-out ml-16">
                            <a href="mailto:iampaolotodde@gmail.com" rel="noopener noreferrer">
                               <span className="inline-block text-base md:text-lg md:pt-2 pb-1 align-baseline">

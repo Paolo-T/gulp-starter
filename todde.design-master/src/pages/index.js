@@ -8,6 +8,7 @@ import About from "../sections/About"
 import Recommendations from "../sections/Recommendations"
 import SideProjects from "../sections/SideProjects"
 import Hero from "../sections/Hero"
+import Contact from "../sections/Contact"
 
 function Home() {
    return (
@@ -47,6 +48,10 @@ function Home() {
 
             <TransitionInview>
                <SideProjects />
+            </TransitionInview>
+
+            <TransitionInview>
+               <Contact />
             </TransitionInview>
 
          </TransitionPageIn>

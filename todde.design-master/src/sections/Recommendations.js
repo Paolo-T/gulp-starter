@@ -57,7 +57,7 @@ function Reccomendations() {
          >
             {reccomendations.map((reccomendation, i) => (
                <TransitionInview key={reccomendation.id}>
-                  <div className={`bg-lessDark bg-opacity-70 p-8 md:p-20 ${i % 2 == 0 ? "md:mt-20" : "md:mt-0"}`}>
+                  <div className={`bg-lessDark p-8 md:p-20 ${i % 2 == 0 ? "md:mt-20" : "md:mt-0"}`}>
                      <p className="mb-6 leading-7" style={{ whiteSpace: "pre-wrap" }}>
                         <span className="text-grey">“</span>
                         {reccomendation.description}
